@@ -1,0 +1,417 @@
+/* Cópia do site http://findmatthew.com/ */
+
+/* @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'; */
+@import 'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap';
+
+
+.sobre {
+    background: #424242; 
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+body {
+color: #fff;
+font-family: "Oxygen" !important;
+font-weight: 300 !important;
+font-size: 16pt;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+margin: 0px;
+overflow-x: hidden;
+text-align: center;
+}
+
+
+#particles-js {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #424242;
+background-image: url("");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #424242;
+    background-color: #fff;
+    border: 1px solid #dee2e6; 
+}
+
+
+.button {
+border: 2px solid #fff;
+box-sizing: inherit;
+cursor: pointer;
+display: inline-block;
+font-size: 13pt;
+padding: 10px 20px;
+transition: all 0.5s;
+}
+
+
+.button:hover {
+background-color: #424242;
+border-color: #424242;
+}
+
+
+.button .mdi {
+vertical-align: middle;
+}
+
+.bold {
+font-family: "Raleway-bold";
+}
+
+.flex {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.highlight {
+color: #DB320E;
+}
+
+.header {
+color: #444649;
+font-family: "raleway-bold";
+font-size: 25pt;
+position: relative;
+position: relative;
+}
+
+.header-bar {
+background: #444649;
+height: 4px;
+margin: 25px 0 75px 0;
+width: 70px;
+}
+
+nav {
+bottom: 0;
+left: 0;
+position: absolute;
+background: #1b242f;
+border-bottom: 3px solid #EC6F30;
+height: 50px;
+text-align: left;
+width: 100%;
+z-index: 99;
+}
+
+nav.fixed {
+bottom: inherit;
+left: 0;
+position: fixed;
+top: 0;
+}
+
+nav.fixed.desk {
+animation: popDown 0.5s;
+}
+nav .link-wrap {
+background: #333;
+height: 0;
+max-width: 1200px;
+overflow: hidden;
+position: absolute;
+top: 53px;
+transition: height 0.3s ease-out;
+width: 100%;
+}
+nav .link-wrap.visible {
+height: 220px;
+}
+
+nav .link-wrap div {
+cursor: pointer;
+font-size: 12pt;
+padding: 12px 20px;
+text-transform: uppercase;
+transition: color 0.5s;
+}
+
+nav .link-wrap div:first-child {
+padding: 25px 20px 12px 20px;
+}
+
+nav .link-wrap div:hover {
+color: #EC6F30;
+}
+
+nav .mdi-menu {
+font-size: 30pt;
+line-height: 36pt;
+margin: auto 0;
+position: absolute;
+right: 5vw;
+top: 0;
+}
+
+nav .active {
+color: #e31b6d;
+}
+
+
+.transition {
+transition: 0.7s;
+}
+
+    
+section {
+color: #616161;
+line-height: 11pt;
+padding: 70px 0 70px 0;
+position: relative;
+}
+section .container {
+box-sizing: border-box;
+margin: 0 auto;
+max-width: 1200px;
+padding: 0 10px;
+width: 100%;
+}
+section:nth-of-type(1) {
+color: #fff;
+height: calc(100vh + 53px);
+padding: 0 10px;
+}
+section:nth-of-type(1) .highlight {
+font-family: "Oxygen";
+font-weight: 700;
+}
+section:nth-of-type(1) .text {
+font-size: 16pt;
+line-height: 20pt;
+text-align: center;
+margin: 0 0 20px 0;
+pointer-events: none;
+z-index: 1;
+}
+section:nth-of-type(1) .hexagon {
+transition: transform 0.9s ease-in-out;
+}
+section:nth-of-type(1) .hexagon:hover {
+transform: rotate(540deg);
+}
+section:nth-of-type(1) .button {
+margin-bottom: 53px;
+padding: 12px 40px 12px 15px;
+position: relative;
+}
+section:nth-of-type(1) .button .mdi {
+position: absolute;
+right: 15px;
+top: 11px;
+transition: transform 0.3s;
+}
+section:nth-of-type(1) .button:hover .mdi {
+transform: rotate(90deg);
+}
+section:nth-of-type(2) .label-wrap .label {
+margin: 20px 0 10px 0;
+}
+section:nth-of-type(2) .bullet-wrap {
+height: 200px;
+justify-content: flex-start;
+padding: 0 7px;
+}
+section:nth-of-type(2) .highlight {
+color: #009ada;
+}
+section:nth-of-type(2) .up-arrow {
+height: 30px;
+margin: 15px 0;
+}
+section:nth-of-type(2) .skills-wrapper {
+align-items: flex-start;
+width: 100%;
+}
+section:nth-of-type(2) .skills-wrapper .me {
+height: 200px;
+}
+section:nth-of-type(2) .skills-wrapper .label {
+margin: 20px 0 15px 0;
+}
+section:nth-of-type(2) .hexagon i {
+color: #fff;
+font-size: 34pt;
+left: 0;
+position: absolute;
+right: 0;
+top: 20px;
+z-index: 1;
+}
+section:nth-of-type(2) .bars-wrap {
+margin: 50px auto 0 auto;
+max-width: 90%;
+width: calc(100% - 15px);
+}
+section:nth-of-type(2) .bars-wrap:not(.animated) .fill {
+width: 0 !important;
+}
+section:nth-of-type(2) .bar {
+align-items: flex-end;
+background-color: #eee;
+color: #666;
+font-size: 7pt;
+height: 22px;
+margin: 0 0 12px 0;
+position: relative;
+}
+
+section:nth-of-type(3) .text {
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+
+section:nth-of-type(4) .text {
+font-size: 9pt;
+line-height: 13pt;
+max-height: 85px;
+}
+section:nth-of-type(5) {
+background: #252934;
+color: #fff;
+padding-top: 175px;
+}
+section:nth-of-type(5) .header {
+color: #fff;
+}
+section:nth-of-type(5) .highlight {
+color: #04c2c9;
+font-weight: 600;
+}
+section:nth-of-type(5) .button {
+background: transparent;
+color: #fff;
+float: right;
+font-size: 12pt;
+margin: 5px 0 0 0;
+outline: 0;
+padding: 10px 30px;
+}
+section:nth-of-type(5) .button:hover {
+background: #04c2c9;
+}
+
+@media screen and (min-width: 600px) {
+body {
+    font-size: 12pt;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.header {
+    font-size: 30pt;
+}
+
+.header-bar {
+    margin: 25px 0 100px 0;
+}
+
+.label {
+    font-size: 18pt;
+}
+
+
+nav .link-wrap {
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+    text-align: left;
+}
+nav .link-wrap .visible {
+    height: initial;
+}
+nav .link-wrap div {
+    display: inline;
+    font-size: initial;
+    margin: 0 20px;
+    padding: initial;
+}
+nav .link-wrap div:first-child {
+    padding: 0;
+}
+nav .mdi-menu {
+    display: none;
+}
+
+section {
+    line-height: 36pt;
+    padding: 100px 0 130px 0;
+}
+section .container {
+    padding: 0 10px;
+}
+section:nth-of-type(1) .text {
+    font-size: 32pt;
+    line-height: 36pt;
+}
+section:nth-of-type(1) .button {
+    padding: 12px 50px 12px 20px;
+}
+section:nth-of-type(1) .button .mdi {
+    top: 16px;
+}
+section:nth-of-type(4) .text {
+    font-size: 11pt;
+    line-height: 15pt;
+}
+section:nth-of-type(4) .blog-wrap {
+    width: 400px;
+}
+
+@media screen and (min-width: 960px) {
+.waypoint {
+    opacity: 0;
+}
+
+
+.canvas {
+    background: #252934;
+}
+
+.button {
+    font-size: 16pt;
+}
+
+.flex.row-gt-sm {
+    flex-direction: row;
+}
+
+.flex-50-gt-sm {
+    box-sizing: border-box;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-height: 100%;
+    max-width: 50%;
+}
+
+
+@media screen and (min-width: 1280px) {
+section:nth-of-type(4) .blog-wrap {
+    margin: 0 0 50px 20px;
+    width: 270px;
+    }
+}
+

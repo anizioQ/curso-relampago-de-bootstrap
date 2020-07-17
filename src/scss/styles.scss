@@ -1,0 +1,42 @@
+@import 'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap';
+/* @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'; */
+
+// Declaração de variáveis
+$primary: #DB320E;
+$body-bg: #424242;
+$success: #DB320E;
+$font-family-sans-serif: 'Oxygen' !important;
+
+
+.highlight {
+    color: #DB320E !important;
+}
+
+.jumbotron {
+    background-color: #424242 !important;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+#particles-js {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+// importação do Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss'
+
